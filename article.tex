@@ -26,8 +26,21 @@
   \label{sec:demostration}
 
     \paragraph{}
-    [TODO ]
+    Demostración de equivalencia en la tipificación de una distribución normal arbitraria ($N(\mu,\sigma^2)$) con la distribución Normal estándar ($N(0,1)$)
 
+    \begin{align}
+      X &\sim N(\mu,\sigma^2) & f(x) &= {\displaystyle {\frac {1}{\sqrt {2\pi \sigma ^{2}}}}\,e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}}\\
+      Z &\sim N(\mu,\sigma^2) & f(z) &= {\displaystyle {\frac {1}{\sqrt {2\pi}}}\,e^{-{\frac {x^{2}}{2}}}} \\
+      Y &= \frac{X-\mu}{\sqrt{\sigma^2}} & f(y)&=?
+    \end{align}
+
+    \begin{align}
+      f(y)  &= f(\frac{x-\mu}{\sqrt{\sigma^2}}) \\
+            &= {\displaystyle {\frac {1}{\sqrt {2\pi \sigma ^{2}}}}\,e^{-{\frac {((\frac{x-\mu}{\sqrt{\sigma^2}})-\mu )^{2}}{2\sigma ^{2}}}}} \\
+            &= ... \\
+            &={\displaystyle {\frac {1}{\sqrt {2\pi}}}\,e^{-{\frac {x^{2}}{2}}}}\\
+      Y &\sim N(0,1)
+    \end{align}
 %-----------------------------
 %	Bibliographic references
 %-----------------------------
